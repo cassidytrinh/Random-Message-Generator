@@ -13,20 +13,29 @@ body {
   }
   .tgp-quote{
     width: 65%;
+    height:3vh;
+  }
+  .quote {
+    font-size:18px;
   }
 }
 @media (max-width: 1047px){
   .click-here-btn {
-    width: 65%;
+    width: 40%;
   }
   .tgp-quote{
     width: 85%;
+    height: 5vh;
+  }
+  .quote {
+    font-size:22px;
   }
 }
 h1 {
-  margin: 15px;
-  color: white;
+  margin: 2%;
+  width: 45%;
   font-size: 48px;
+  color: white;
   font-family: 'Raleway', sans-serif;
 }
 .click-here-btn {
@@ -40,6 +49,7 @@ h1 {
   border-radius: 4px;
 }
 .clear-btn {
+  display:block;
   margin: 15px;
   padding: 12px 18px;
   border: 1px solid white;
@@ -50,14 +60,29 @@ h1 {
   border-radius: 4px;
 }
 .quote {
-  margin-bottom: 7.5%;
+  margin-bottom: 5%;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-size: 28px;
+  line-height: 30pt;
+  /* animation: fade 3s ease-in; */
+  /* -webkit-animation: fade 3s ease-in; */
+}
+@keyframes fadeI {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadeO {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
 .tgp-quote {
   margin-left: 3vh;
-  margin-bottom: 25vh;
-  height: 15vh;
-  width: 50%;
+  margin-bottom: 5vh;
+  height: 15%;
+  width: 60%;
+}
+div {
+  display: block;
+  height: 50%;
 }
